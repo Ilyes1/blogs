@@ -37,7 +37,7 @@ const Home = () => {
         // }))
 
         axios.post(
-            'http://blog-ilyes.herokuapp.com/createPost',
+            'https://blog-ilyes.herokuapp.com/createPost',
             {
                 name: name,
                 image: preview,
@@ -70,7 +70,7 @@ const Home = () => {
         //     }])
         // })
 
-        axios.get('http://blog-ilyes.herokuapp.com/posts')
+        axios.get('https://blog-ilyes.herokuapp.com/posts')
         .then((posts) => {
             posts.data.map(post => {
                 setPosts((oldArray) => [...oldArray, {
